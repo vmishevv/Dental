@@ -1,0 +1,604 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+  <!-- ***** Welcome Area Start ***** -->
+  <section class="welcome-area">
+    <!-- Welcome Slides -->
+    <div class="welcome-slides owl-carousel">
+      <!-- Single Welcome Slide -->
+      <div class="welcome-welcome-slide bg-img bg-gradient-overlay jarallax" style="background-image: url'{% static 'website/img/bg_img/1.jpg' %}';">
+        <div class="container h-100">
+          <div class="row h-100 align-items-center">
+            <div class="col-12">
+              <!-- Welcome Text -->
+              <div class="welcome-text text-center">
+                <h2 data-animation="fadeInUp" data-delay="100ms">Ние вярваме, че всеки трябва да има лесен достъп до отлични зъболекарски грижи!</h2>
+                <p data-animation="fadeInUp" data-delay="300ms">Като водещи в индустрията, "Easy Dent" осигурява вълнуващи нови възможности за дентални специалисти, инвеститори, служители и доставчици. Моля, свържете се с нас, за повече подобробности относно нашите услуги!</p>
+                <div class="welcome-btn-group">
+                  <a href="{% url 'contact' %}" class="btn dento-btn mx-2 active" data-animation="fadeInDown" data-delay="700ms">Връзка С Нас</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Single Welcome Slide -->
+      <div class="welcome-welcome-slide bg-img bg-gradient-overlay jarallax" style="background-image: url'{% static 'website/img/bg_img/2.jpg' %}';">
+        <div class="container h-100">
+          <div class="row h-100 align-items-center">
+            <div class="col-12">
+              <!-- Welcome Text -->
+              <div class="welcome-text text-center">
+                <h2 data-animation="fadeInDown" data-delay="100ms">Ние вярваме, че всеки трябва да има лесен достъп до отлични зъболекарски грижи!</h2>
+                <p data-animation="fadeInDown" data-delay="300ms">Като водещи в индустрията, "Dento" осигурява вълнуващи нови възможности за дентални специалисти, инвеститори, служители и доставчици. Моля, свържете се с нас, за повече подобробности относно нашите услуги!</p>
+                <div class="welcome-btn-group">
+                  <a href="{% url 'contact' %}" class="btn dento-btn mx-2 active" data-animation="fadeInDown" data-delay="700ms">Връзка С Нас</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Welcome Area End ***** -->
+
+  <!-- ****** About Us Area Start ******* -->
+  <section class="dento-about-us-area section-padding-100-0">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- About Us Thumbnail -->
+        <div class="col-12 col-md-6">
+          <div class="about-us-thumbnail mb-50">
+            <img src="{% static 'website/img/bg_img/15.jpg' %}" alt="">
+          </div>
+        </div>
+        <!-- About Content -->
+        <div class="col-12 col-md-6">
+          <div class="about-us-content mb-50">
+            <!-- Section Heading -->
+            <div class="section-heading">
+              <h2>За Нас</h2>
+              <div class="line"></div>
+            </div>
+            <p>Тук сме за да сбъднем вашата мечта за изкряща и красива усмивка! САМО при нас, ще намерите всякакви нечувани методи за това как да опазите възможно най-дълго вашите зъби незавасимо от вашата възраст!</p>
+
+            <!-- Single Skills Area -->
+            <div class="single-skills-area mt-30">
+              <h6>Зъболекарски Опит</h6>
+              <div id="bar1" class="barfiller">
+                <span class="tip"></span>
+                <span class="fill" data-percentage="80"></span>
+              </div>
+            </div>
+
+            <!-- Single Skills Area -->
+            <div class="single-skills-area mt-30">
+              <h6>Модерна Технология</h6>
+              <div id="bar2" class="barfiller">
+                <span class="tip"></span>
+                <span class="fill" data-percentage="65"></span>
+              </div>
+            </div>
+
+            <!-- Single Skills Area -->
+            <div class="single-skills-area mt-30">
+              <h6>Дружелюбен Колектив</h6>
+              <div id="bar3" class="barfiller">
+                <span class="tip"></span>
+                <span class="fill" data-percentage="85"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ****** About Us Area End ****** -->
+
+  <div class="container">
+    <div class="dento-border clearfix"></div>
+  </div>
+
+  <!-- Cool Facts Area Start -->
+  <section class="dento-cta-area">
+    <div class="container">
+      <div class="row">
+        <!-- Cool Facts Area -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="single-cta text-center mt-50 mb-100">
+            <i class="icon_genius"></i>
+            <h2><span class="counter">20</span></h2>
+            <h5>Години Опит</h5>
+          </div>
+        </div>
+
+        <!-- Cool Facts Area -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="single-cta text-center mt-50 mb-100">
+            <i class="icon_heart_alt"></i>
+            <h2><span class="counter">700</span>+</h2>
+            <h5>Доволни Клиенти</h5>
+          </div>
+        </div>
+
+        <!-- Cool Facts Area -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="single-cta text-center mt-50 mb-100">
+            <i class="icon_book_alt"></i>
+            <h2><span class="counter">120</span></h2>
+            <h5>Сертификати</h5>
+          </div>
+        </div>
+
+        <!-- Cool Facts Area -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="single-cta text-center mt-50 mb-100">
+            <i class="icon_id"></i>
+            <h2><span class="counter">40</span>+</h2>
+            <h5>Зъболекар</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Cool Facts Area End -->
+
+  <!-- Dento Service Area Start -->
+  <section class="dento-service-area section-padding-100-0 bg-img bg-gradient-overlay jarallax clearfix" style="background-image: url'{% static 'website/img/bg_img/13.jpg' %}';">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Service Content -->
+        <div class="col-12 col-lg-6">
+          <div class="service-content mb-30">
+            <!-- Section Heading -->
+            <div class="section-heading white">
+              <h2>Нашите Услуги</h2>
+              <div class="line"></div>
+            </div>
+
+            <div class="row">
+              <!-- Single Service -->
+              <div class="col-6 col-md-4">
+                <div class="single-service mb-70">
+                  <img src="{% static 'website/img/core_img/s1.png' %}" alt="">
+                  <h6>Избелване На Зъби</h6>
+                </div>
+              </div>
+
+              <!-- Single Service -->
+              <div class="col-6 col-md-4">
+                <div class="single-service mb-70">
+                  <img src="{% static 'website/img/core_img/s2.png' %}" alt="">
+                  <h6>Зъбен Имплант</h6>
+                </div>
+              </div>
+
+              <!-- Single Service -->
+              <div class="col-6 col-md-4">
+                <div class="single-service mb-70">
+                  <img src="{% static 'website/img/core_img/s3.png' %}" alt="">
+                  <h6>Изграждане На Зъби</h6>
+                </div>
+              </div>
+
+              <!-- Single Service -->
+              <div class="col-6 col-md-4">
+                <div class="single-service mb-70">
+                  <img src="{% static 'website/img/core_img/s4.png' %}" alt="">
+                  <h6>Козметична Стоматология</h6>
+                </div>
+              </div>
+
+              <!-- Single Service -->
+              <div class="col-6 col-md-4">
+                <div class="single-service mb-70">
+                  <img src="{% static 'website/img/core_img/s5.png' %}" alt="">
+                  <h6>Прегледи</h6>
+                </div>
+              </div>
+
+              <!-- Single Service -->
+              <div class="col-6 col-md-4">
+                <div class="single-service mb-70">
+                  <img src="{% static 'website/img/core_img/s6.png' %}" alt="">
+                  <h6>Отстраняване На Зъбни Болки</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video Area -->
+        <div class="col-12 col-lg-6">
+          <div class="dento-video-area mb-100">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/37iJgHGqOyU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Dento Service Area End -->
+
+  <!-- Dento Pricing Table Area Start -->
+  <section class="dento-pricing-table-area section-padding-100">
+    <div class="container">
+      <div class="row">
+        <!-- Section Heading -->
+        <div class="col-12">
+          <div class="section-heading text-center">
+            <h2>Ценоразпис</h2>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <div class="dento-price-table table-responsive">
+            <table class="table table-borderless mb-0">
+              <thead>
+                <tr>
+                  <th scope="col">Нашите Услуги</th>
+                  <th scope="col">Посещения</th>
+                  <th scope="col">Цена</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Избелване На Зъби В Домашни Условия</th>
+                  <td>1 посещение</td>
+                  <td>115 лв.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Избелване На Зъби В Зъболекарска Клиника</th>
+                  <td>1 посещение</td>
+                  <td>100 лв.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Керамични Коронки и Пломби (Стоматологичен Порцелан)</th>
+                  <td>1 посещение</td>
+                  <td>99 лв.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Сваляне На Коронки и Мостове (Услуги)</th>
+                  <td>1 посещение</td>
+                  <td>50 лв.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Запълване На Пространството Между Венците</th>
+                  <td>1 посещение</td>
+                  <td>400 лв.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Консултация, Впечатления и Изготвяне На Модели</th>
+                  <td>1 посещение</td>
+                  <td>35 лв.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Премахване На Стара Пломба, Коронка</th>
+                  <td>1 посещение</td>
+                  <td>99 лв.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Подложка За Избелване На Зъби (2 дъги)</th>
+                  <td>1 посещение</td>
+                  <td>170 лв.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Стандартна Порцеланова и Циркониева Коронка Върху Импланта</th>
+                  <td>1 посещение</td>
+                  <td>499 лв.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Имплантиране На Имплант (Цената Зависи От Използвания Метод)</th>
+                  <td>1 посещение</td>
+                  <td>600 лв.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="more-btn text-center mt-50">
+            <a href="{% url 'pricing' %}" class="btn dento-btn">Прочетете Още <i class="fa fa-angle-double-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Dento Pricing Table Area End -->
+
+  <!-- Book An Oppointment Area Start -->
+  <section class="book-an-oppointment-area section-padding-100 bg-img bg-gradient-overlay jarallax clearfix" style="background-image: url'{% static 'website/img/bg_img/12.jpg' %}';">
+    <div class="container">
+      <div class="row">
+        <!-- Section Heading -->
+        <div class="col-12">
+          <div class="section-heading text-center white">
+            <h2>Запазете Час</h2>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <!-- Appointment Form -->
+          <div class="appointment-form">
+            <form action="#" method="post">
+              {% csrf_token %}
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group mb-30">
+                    <input type="text" name="your-name" class="form-control" placeholder="Твоето Име" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group mb-30">
+                    <input type="text" name="your-phone" class="form-control" placeholder="Твоят Телефон" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group mb-30">
+                    <input type="email" name="your-email" class="form-control" placeholder="Твоят Имейл" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group mb-30">
+                    <input type="text" name="your-address" class="form-control" placeholder="Твоят Адрес">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group mb-30">
+                    <select name="your-scheldule" class="form-control">
+                      <option value="Choose Your Scheldule">Изберете График</option>
+                      <option value="9 AM to 10 AM">9:00 до 10:00 (сутринта)</option>
+                      <option value="11 AM to 12 PM">11:00 до 12:00 (на обяд)</option>
+                      <option value="2 PM to 4 PM">14:00 до 16:00 (следобед)</option>
+                      <option value="8 PM to 10 PM">20:00 до 22:00 (вечерта)</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group mb-30">
+                    <select name="your-time" class="form-control">
+                      <option value="Choose Your Time">Изберете График</option>
+                      <option value="9 AM to 10 AM">9:00 до 10:00 (сутринта)</option>
+                      <option value="11 AM to 12 PM">11:00 до 12:00 (на обяд)</option>
+                      <option value="2 PM to 4 PM">14:00 до 16:00 (следобед)</option>
+                      <option value="8 PM to 10 PM">20:00 до 22:00 (вечерта)</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group mb-30">
+                    <textarea name="your-message" class="form-control" placeholder="Твоето Съобщение"></textarea>
+                  </div>
+                </div>
+                <div class="col-12 text-center">
+                  <button type="submit" class="btn dento-btn">Запази Своя Час СЕГА!</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Book An Oppointment Area End -->
+
+  <!-- ***** Dento Dentist Area Start ***** -->
+  <section class="dentist-area section-padding-100-0">
+    <div class="container">
+      <div class="row">
+        <!-- Section Heading -->
+        <div class="col-12">
+          <div class="section-heading text-center">
+            <h2>Нашият Зъболекар</h2>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Single Dentist Area -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="single-dentist-area mb-100">
+            <img src="{% static 'website/img/bg_img/9.png' %}" alt="">
+            <!-- Dentist Content -->
+            <div class="dentist-content">
+              <!-- Social Info -->
+              <div class="dentist-social-info">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-google-plus"></i></a>
+              </div>
+              <!-- Dentist Info -->
+              <div class="dentist-info bg-gradient-overlay">
+                <h5>Михаил Стоев</h5>
+                <p>Експерт По Имплантиране</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Dentist Area -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="single-dentist-area mb-100">
+            <img src="{% static 'website/img/bg_img/10.png' %}" alt="">
+            <!-- Dentist Content -->
+            <div class="dentist-content">
+              <!-- Social Info -->
+              <div class="dentist-social-info">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-google-plus"></i></a>
+              </div>
+              <!-- Dentist Info -->
+              <div class="dentist-info bg-gradient-overlay">
+                <h5>Тервел Стефанов</h5>
+                <p>Експерт По Избелване На Зъби</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Dentist Area -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="single-dentist-area mb-100">
+            <img src="{% static 'website/img/bg_img/11.png' %}" alt="">
+            <!-- Dentist Content -->
+            <div class="dentist-content">
+              <!-- Social Info -->
+              <div class="dentist-social-info">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-google-plus"></i></a>
+              </div>
+              <!-- Dentist Info -->
+              <div class="dentist-info bg-gradient-overlay">
+                <h5>Йоана Иванова</h5>
+                <p>Експерт По Изграждане На Зъби</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Dento Dentist Area End ***** -->
+
+  <!-- ***** Testimonials Area Start ***** -->
+  <section class="testimonials-area section-padding-100 bg-img bg-gradient-overlay jarallax clearfix" style="background-image: url'{% static 'website/img/bg_img/7.jpg' %}';">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <!-- Testimonials Slides -->
+          <div class="testimonials-slides owl-carousel">
+            <!-- Single Testimonials Slide -->
+            <div class="single-testimonial-slide d-flex align-items-center">
+              <!-- Thumbnail -->
+              <div class="testimonial-thumb">
+                <img src="{% static 'website/img/bg_img/8.jpg' %}" alt="">
+              </div>
+              <!-- Content -->
+              <div class="testimonial-content">
+                <h5>“Избягвах да ходя на зъболекар поради години лош опит. Изпраща се SMS точно 1 работен ден преди Вашия час. Също получих и обаждане за потвърждаване на часа. Оттогава съм техен пациент! Зъболекарят ми е СУПЕР спокоен и страшно прецизен. 
+                  Отлично лечение и професионални съвети!”</h5>
+                <h6>Алекс Рамзи</h6>
+                <p>Пациент</p>
+              </div>
+            </div>
+
+            <!-- Single Testimonials Slide -->
+            <div class="single-testimonial-slide d-flex align-items-center">
+              <!-- Thumbnail -->
+              <div class="testimonial-thumb">
+                <img src="{% static 'website/img/bg_img/8.jpg' %}" alt="">
+              </div>
+              <!-- Content -->
+              <div class="testimonial-content">
+                <h5>“Избягвах да ходя на зъболекар поради години лош опит. Изпраща се SMS точно 1 работен ден преди Вашия час. Също получих и обаждане за потвърждаване на часа. Оттогава съм техен пациент! Зъболекарят ми е СУПЕР спокоен и страшно прецизен. 
+                  Отлично лечение и професионални съвети!”</h5>
+                <h6>Алекс Рамзи</h6>
+                <p>Пациент</p>
+              </div>
+            </div>
+
+            <!-- Single Testimonials Slide -->
+            <div class="single-testimonial-slide d-flex align-items-center">
+              <!-- Thumbnail -->
+              <div class="testimonial-thumb">
+                <img src="{% static 'website/img/bg_img/8.jpg' %}" alt="">
+              </div>
+              <!-- Content -->
+              <div class="testimonial-content">
+                <h5>“Избягвах да ходя на зъболекар поради години лош опит. Изпраща се SMS точно 1 работен ден преди Вашия час. Също получих и обаждане за потвърждаване на часа. Оттогава съм техен пациент! Зъболекарят ми е СУПЕР спокоен и страшно прецизен. 
+                  Отлично лечение и професионални съвети!”</h5>
+                <h6>Алекс Рамзи</h6>
+                <p>Пациент</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Testimonials Area End ***** -->
+
+  <!-- ***** Blog Area Start ***** -->
+  <section class="dento-blog-area section-padding-100-0 clearfix">
+    <div class="container">
+      <div class="row">
+        <!-- Section Heading -->
+        <div class="col-12">
+          <div class="section-heading text-center">
+            <h2>Последни Новини</h2>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Single Blog Item -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="single-blog-item mb-100">
+            <a href="{% url 'blog_details' %}">
+              <img src="{% static 'website/img/bg_img/4.jpg' %}" alt="">
+            </a>
+            <!-- Blog Content -->
+            <div class="blog-content">
+              <a href="{% url 'blog_details' %}" class="post-title">Как устните бактериите могат да увредят белите Ви дробове</a>
+              <div class="post-meta">
+                <a href="#"><i class="icon_clock_alt"></i> 28 Сеп. 2022</a>
+                <a href="#"><i class="icon_chat_alt"></i> 0 Коментара</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Blog Item -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="single-blog-item mb-100">
+            <a href="{% url 'blog_details' %}">
+              <img src="{% static 'website/img/bg_img/5.jpg' %}" alt="">
+            </a>
+            <!-- Blog Content -->
+            <div class="blog-content">
+              <a href="{% url 'blog_details' %}" class="post-title">Коя е най-добрата паста за зъби?</a>
+              <p>Donec tempor, lorem et euismod eleifend, est lectus laoreet ante, sed accusan justo diam ...</p>
+              <div class="post-meta">
+                <a href="#"><i class="icon_clock_alt"></i> 6 Ян. 2023</a>
+                <a href="#"><i class="icon_chat_alt"></i> 1 Коментар</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Blog Item -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="single-blog-item mb-100">
+            <a href="{% url 'blog_details' %}">
+              <img src="{% static 'website/img/bg_img/6.jpg' %}" alt="">
+            </a>
+            <!-- Blog Content -->
+            <div class="blog-content">
+              <a href="{% url 'blog_details' %}" class="post-title">Защо трябва да избягвате пиенето на напитки?</a>
+              <p>Donec tempor, lorem et euismod eleifend, est lectus laoreet ante, sed accusan justo diam ...</p>
+              <div class="post-meta">
+                <a href="#"><i class="icon_clock_alt"></i> 28 Ян. 2023</a>
+                <a href="#"><i class="icon_chat_alt"></i> 2 Коментара</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Blog Area End ***** -->
+
+{% endblock %}

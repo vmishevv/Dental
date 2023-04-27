@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+  <!-- ***** Breadcrumb Area Start ***** -->
+  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url'{% static 'website/img/bg_img/12.jpg' %}';"> 
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12">
+          <h2 class="title">Контакти</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="breadcumb--con">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i> Начало</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Контакти</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Breadcrumb Area End ***** -->
+  {% if message_name %}
+    <center><h3>Благодаря, {{message_name}}!</h3>
+    <br/><br/>
+    Твоето съобщение беше изпратено! 
+   </center>
+  {% endif %}
+
+  <!-- ***** Contact Area Start ***** -->
+  <section class="dento-contact-area mt-50 mb-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="google-maps mb-100">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2957.677672086432!2d24.744999415832574!3d42.15718390588098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14acd190dbf5aa2b%3A0x926d46801a634a95!2sDENTAL%20CENTER%20EASY%20DENT!5e0!3m2!1sen!2sbg!4v1679926656456!5m2!1sen!2sbg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Contact Information -->
+        <div class="col-12 col-md-4">
+          <div class="contact-information"> 
+            <h5>Адрес</h5>
+            <p>ул. "Мария Кюри" 13, 4003 Кършиака, 4003 Кършиака</p>
+
+            <h5>Телефон</h5>
+            <p>+359 89 661 4562</p>
+
+            <h5>Факс</h5>
+            <p>+359 89 661 4562</p>
+
+            <h5>Ел. Поща</h5>
+            <p class="mb-0">dentalc.info@gmail.com</p>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="col-12 col-md-8">
+          <div class="contact-form">
+            <!-- Section Heading -->
+            <div class="section-heading">
+              <h2>Връзка С Нас</h2>
+              <div class="line"></div>
+            </div>
+            <!-- Form -->
+            <div id="contactVr">
+            <form action="{% url 'contact' %}" method="post">
+              {% csrf_token %}
+              <div class="row">
+                <div class="col-lg-6">
+                  <input type="text" name="message-name" class="form-control mb-30" placeholder="Твоето Име">
+                </div>
+                <div class="col-lg-6">
+                  <input type="email" name="message-email" class="form-control mb-30" placeholder="Твоят Имейл">
+                </div>
+                <div class="col-12">
+                  <textarea name="message" class="form-control mb-30" placeholder="Твоето Съобщение"></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn dento-btn">Изпратете Съобщение</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Contact Area End ***** -->
+
+{% endblock %} 

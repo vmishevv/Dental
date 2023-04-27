@@ -1,0 +1,178 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+  <!-- ***** Breadcrumb Area Start ***** -->
+  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url'{% static 'website/img/bg-img/12.jpg' %}';">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12">
+          <h2 class="title">Подробности За Блога</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="breadcumb--con">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="{% url 'home' %}"><i class="fa fa-home"></i> Начало</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Подробности За Блога</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Breadcrumb Area End ***** -->
+
+  <!-- ****** Blog Area Start ******* -->
+  <section class="dento--blog-area mt-50">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-8 mb-100">
+          <!-- Blog Details Area -->
+          <div class="blog-details-area">
+            <img src="{% static 'website/img/bg_img/24.jpg' %}" alt="">
+
+            <h2 class="post-title">ЧЕСТИ ГРЕШКИ ПРИ МИЕНЕТО НА ЗЪБИТЕ</h2>
+            <div class="post-meta">
+              <a href="#"><i class="icon_clock_alt"></i> 28 Февр. 2023</a>
+              <a href="#"><i class="icon_chat_alt"></i> 3 Коментара</a>
+            </div>
+            <p>Миенето на зъбите е нещо, което всеки приема за елементарно и интуитивно, но всъщност изисква внимание и старание. Човек може сериозно да увреди зъбите, когато ги почиства неправилно и нередовно.
+              Специалистите на дентална клиника Medstom споделят, няколко чести грешки, които не бива да допускате, когато почиствате зъбите си в ежедневието.</p>
+              <h3>1. Неподходяща четка за зъби</h3>
+              <p>Изборът на подходяща четка за зъби съвсем не е толкова лесна задача. На пазара има десетки марки, които предлагат стотици видове четки с различна дебелина, форма и плътност. Как да изберете правилната, която отговаря на Вашите специфични нужди?           
+                <br> 
+                Нашият съвет е да изберете четка с подходяща твърдост на власинките. Ако са прекалено твърди те могат да наранят зъбните тъкани по време на миене, а ако са прекалено меки няма да премахват успешно плаката. Важно е да се намери баланс между двете за Вашия конкретен случай.</p>
+            <blockquote cite="" class="dento-blockquote d-flex">
+              <div class="icon">
+                <i class="fa fa-quote-left"></i>
+              </div>
+              <div class="text">
+                <h5>Добрата грижа за вашите зъби е ИЗКЛЮЧИТЕЛНО важна, но когато зъбът Ви боли, трудно би било да станете добри. </h5>
+                <h6>Гергана Кърнева / <span>Социален Активист</span></h6>
+              </div>
+            </blockquote>
+            <h3>2. Рядко и кратко миене</h3>
+            <p>Ако зъбите не се почистват редовно, това предразполага към развиване на бактерии в устната кухина.Препоръката на Световната организация по орално здраве е зъбите да се почистват 2 пъти на ден с продължителност на миене поне 2 минути. За съжаление много хора не покриват дори този минимум, а той е нужен за да се почистят ефикасно всички повърхности. Един добър начин за миене е да разделите зъбите си на квадранти и да отделяте по 30 секунди на всеки от тях.</p>
+            <h3>3. Пропускане на вътрешните повърхности</h3>
+            <p>Много хора пропускат повърхността откъм езика - вътрешната част на зъбите. Дори и да не я виждаме плаката се натрупва и е важно да я почиствате ежедневно. Езикът също не бива да бъде пропускан, защото той е най-големият резервоар за микроорганизми в устната кухина. Съветът ни е да почиствате старателно всички повърхности. Контролът на плаката намалява развитието на двете основни групи орални заболявания – кариес и пародонтални.</p>
+            <h3>4. Не сменяте четката си за зъби редовно</h3>
+            <p>Стоматолозите препоръчват четката за зъби да се сменя на всеки три месеца. По-важно е обаче състоянието на четката отколкото точния график. Ако власинките се втвърдяват или се обезформят и разпадат, значи е време за нова четка.</p>
+            <h3>5. Не изплаквате четката след миене</h3>
+            <p>Ако четката остане непочистена от плаката и пастата за зъби, това води до развиване на бактерии, които слагате в устата си при следващо миене.</p>
+            <h3>6. Неправилен метод на миене</h3>
+            <p>Хоризонталното миене по линията на венците може да доведе до травмиране на венците и надраскване на емайла. Правилният начин да миете зъбите си е като движите четката с вертикални или кръгови движения от венеца към зъба.</p>
+            <h3>7. Миене прекалено често или с прекалено много сила</h3>
+            <p>Другата крайност също може да бъде вредна за зъбите, миенето по 2 пъти на ден е оптимален вариант. Повече от това може да раздразни корена на зъба и заедно с него венците. Също така, миенето с натиск може да унищожи емайла. Зъбите трябва да се мият внимателно два пъти на ден за 2-3 минути, съветват нашите дентални специалисти.</p>
+            <img src="./img/bg-img/25.jpg" alt="">
+            <p></p>
+          </div>
+
+          <!-- Post Share  -->
+          <div class="post-share-area mb-30">
+            <a href="#" class="facebook"><i class="fa fa-facebook"></i> Сподели в Facebook</a>
+            <a href="#" class="tweet"><i class="fa fa-twitter"></i> Сподели в Twitter</a>
+            <a href="#" class="google-plus"><i class="fa fa-google-plus"></i> Сподели в Google-Plus</a>
+            <a href="#" class="pinterest"><i class="fa fa-pinterest"></i> Сподели в Pinterest</a>
+          </div>         
+
+          <!-- Leave A Reply -->
+          <div class="contact-form mt-30">
+            <h5 class="mb-30">Оставете Отговор</h5>
+
+            <!-- Form -->
+            <form action="#" method="post">
+              <div class="row">
+                <div class="col-lg-6">
+                  <input type="text" name="message-name" class="form-control mb-30" placeholder="Твоето Име">
+                </div>
+                <div class="col-lg-6">
+                  <input type="email" name="message-email" class="form-control mb-30" placeholder="Твоят Имейл">
+                </div>
+                <div class="col-12">
+                  <textarea name="message" class="form-control mb-30" placeholder="Твоето Съобщение"></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn dento-btn">Отговори</button>
+                </div>
+              </div>
+            </form>
+
+          </div>
+        </div>
+
+        <!-- Dento Sidebar Area -->
+        <div class="col-12 col-lg-4">
+          <div class="dento-sidebar">
+
+            <!-- Single Widget Area -->
+            <div class="single-widget-area search-widget">
+              <form action="#" method="post">
+                <input type="search" name="search" class="form-control" placeholder="Потърсете ...">
+                <button type="submit"><i class="icon_search"></i></button>
+              </form>
+            </div>
+
+            <!-- Single Widget Area -->
+            <div class="single-widget-area catagories-widget">
+              <h5 class="widget-title">Категории</h5>
+
+              <!-- catagories list -->
+              <ul class="catagories-list">
+                <li><a href="#">Статии</a></li>
+                <li><a href="#">Устна Медицина</a></li>
+                <li><a href="#">Модерна Зъболекарска Технология</a></li>
+                <li><a href="#">Грижи За Деца</a></li>
+                <li><a href="#">Здрави усмивки, Отвътре &amp; Отвън</a></li>
+              </ul>
+            </div>
+
+            <!-- Single Widget Area -->
+            <div class="single-widget-area news-widget">
+              <h5 class="widget-title">Скорошни Новини</h5>
+
+              <!-- Single News Area -->
+              <div class="single-news-area d-flex align-items-center">
+                <div class="blog-thumbnail">
+                  <img src="{% static 'website/img/bg_img/21.jpg' %}" alt="">
+                </div>
+                <div class="blog-content">
+                  <a href="#" class="post-title">Кариес: Защо е нужно да имаме добре дентална хигиена?</a>
+                  <span class="post-date">31 Март 2023</span>
+                </div>
+              </div>
+
+              <!-- Single News Area -->
+              <div class="single-news-area d-flex align-items-center">
+                <div class="blog-thumbnail">
+                  <img src="{% static 'website/img/bg_img/22.jpg' %}" alt="">
+                </div>
+                <div class="blog-content">
+                  <a href="#" class="post-title">6 причини, поради които дъхът Ви може да мирише на кучешки изпражнения</a>
+                  <span class="post-date">15 Март 2023</span>
+                </div>
+              </div>
+
+              <!-- Single News Area -->
+              <div class="single-news-area d-flex align-items-center">
+                <div class="blog-thumbnail">
+                  <img src="{% static 'website/img/bg_img/23.jpg' %}" alt="">
+                </div>
+                <div class="blog-content">
+                  <a href="#" class="post-title">Всичко, което трябва да знаете за синусните инфекции</a>
+                  <span class="post-date">5 Март. 2023</span>
+                </div>
+              </div>
+            </div>         
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ****** Blog Area End ******* -->
+{% endblock %}

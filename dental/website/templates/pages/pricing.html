@@ -1,0 +1,164 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+  <!-- ***** Breadcrumb Area Start ***** -->
+  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url'{% static 'website/img/bg_img/12.jpg' %}';">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12">
+          <h2 class="title">Ценоразпис</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="breadcumb--con">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="{% url 'home' %}"><i class="fa fa-home"></i> Начало</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Ценоразпис</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Breadcrumb Area End ***** -->
+
+  <!-- ***** Dento Pricing Table Area Start ***** -->
+  <section class="dento-pricing-table-area mt-50 section-padding-0-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="dento-price-table table-responsive">
+            <table class="table table-borderless mb-0">
+              <thead>
+                <tr>
+                  <th scope="col">Нашите Услуги</th>
+                  <th scope="col">Посещения</th>
+                  <th scope="col">Цена</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Избелване На Зъби В Домашни Условия</th>
+                  <td>1 посещение</td>
+                  <td>115 лв.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Избелване На Зъби В Зъболекарска Клиника</th>
+                  <td>1 посещение</td>
+                  <td>100 лв.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Керамични Коронки и Пломби (Стоматологичен Порцелан)</th>
+                  <td>1 посещение</td>
+                  <td>99 лв.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Сваляне На Коронки и Мостове (Услуги)</th>
+                  <td>1 брой</td>
+                  <td>50 лв.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Запълване На Пространството Между Венците</th>
+                  <td>1 посещение</td>
+                  <td>400 лв.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Консултация, Впечатления и Изготвяне На Модели</th>
+                  <td>1 посещение</td>
+                  <td>35 лв.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Премахване На Стара Пломба, Коронка</th>
+                  <td>1 посещение</td>
+                  <td>99 лв.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Подложка За Избелване На Зъби (2 дъги)</th>
+                  <td>1 посещение</td>
+                  <td>170 лв.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Стандартна Порцеланова и Циркониева Коронка Върху Импланта</th>
+                  <td>1 брой</td>
+                  <td>499 лв.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Имплантиране На Имплант (Цената Зависи От Използвания Метод)</th>
+                  <td>1 брой</td>
+                  <td>600 лв.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Запълване На Пространството Между Венците</th>
+                  <td>1 посещение</td>
+                  <td>400 лв.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Консултация, Впечатления и Изготвяне На Модели</th>
+                  <td>1 посещение</td>
+                  <td>35 лв.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Керамични Коронки и Пломби (Стоматологичен Порцелан)</th>
+                  <td>1 посещение</td>
+                  <td>99 лв.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Подложка За Избелване На Зъби (2 дъги)</th>
+                  <td>1 посещение</td>
+                  <td>170 лв.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Стандартна Порцеланова и Циркониева Коронка Върху Импланта</th>
+                  <td>1 брой</td>
+                  <td>499 лв.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Имплантиране На Имплант (Цената Зависи От Използвания Метод)</th>
+                  <td>1 брой</td>
+                  <td>600 лв.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Запълване На Пространството Между Венците</th>
+                  <td>1 посещение</td>
+                  <td>400 лв.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Консултация, Впечатления и Изготвяне На Модели</th>
+                  <td>1 посещение</td>
+                  <td>35 лв.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Керамични Коронки и Пломби (Стоматологичен Порцелан)</th>
+                  <td>1 посещение</td>
+                  <td>99 лв.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Подложка За Избелване На Зъби (2 дъги)</th>
+                  <td>1 посещение</td>
+                  <td>170 лв.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Стандартна Порцеланова и Циркониева Коронка Върху Импланта</th>
+                  <td>1 брой</td>
+                  <td>499 лв.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Имплантиране На Имплант (Цената Зависи От Използвания Метод)</th>
+                  <td>1 брой</td>
+                  <td>600 лв.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Dento Pricing Table Area End ***** -->
+{% endblock %}

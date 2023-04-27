@@ -1,0 +1,234 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+  <!-- ***** Breadcrumb Area Start ***** -->
+  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url'{% static 'webiste/img/bg_img/12.jpg' %}';">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12">
+          <h2 class="title">Услуги</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="breadcumb--con">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="{% url 'home' %}"><i class="fa fa-home"></i> Начало</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Услуги</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Breadcrumb Area End ***** -->
+
+  <!-- ***** Services Area Start ***** -->
+  <section class="dento-services-area mt-50 mb-50">
+    <div class="container">
+      <div class="row">
+
+        <!-- Single Service Area -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="single-service--area text-center mb-50">
+            <div class="icon--">
+              <img src="{% static 'website/img/core_img/s6.png' %}" alt="">
+            </div>
+            <h5>Избелване На Зъби</h5>
+            <p>Избелването на зъби е козметична процедура, която има за цел да направи вашата усмивката по-бяла и по-привлекателна от всякога!</p>
+          </div>
+        </div>
+
+        <!-- Single Service Area -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="single-service--area text-center mb-50">
+            <div class="icon--">
+              <img src="{% static 'website/img/core_img/s7.png' %}" alt="">
+            </div>
+            <h5>Зъбен Имплант</h5>
+            <p>Върнете усмивката си САМО за 72 часа! БЕЗ болки и БЕЗ Синуслифт или присаждане на кост!</p>
+          </div>
+        </div>
+
+        <!-- Single Service Area -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="single-service--area text-center mb-50">
+            <div class="icon--">
+              <img src="{% static 'website/img/core_img/s8.png' %}" alt="">
+            </div>
+            <h5>Изграждане На Зъби</h5>
+            <p>Това е метод по който се възстановява наранен или счупен зъб.</p>
+          </div>
+        </div>
+
+        <!-- Single Service Area -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="single-service--area text-center mb-50">
+            <div class="icon--">
+              <img src="{% static 'website/img/core_img/s9.png' %}" alt="">
+            </div>
+            <h5>Козметична Стоматология</h5>
+            <p>Това е съвременна наука, която позволява на добрите зъболекари да променят естествени НЕЖЕЛАНИ промени върху вашите зъби или придобити в резултат на възрастта.</p>
+          </div>
+        </div>
+
+        <!-- Single Service Area -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="single-service--area text-center mb-50">
+            <div class="icon--">
+              <img src="{% static 'website/img/core_img/s10.png' %}" alt="">
+            </div>
+            <h5>Прегледи</h5>
+            <p>Годишният стоматологичен преглед ГАРАНТИРА, че вашите зъби са в оптимално състояние през цялата година.</p>
+          </div>
+        </div>
+
+        <!-- Single Service Area -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="single-service--area text-center mb-50">
+            <div class="icon--">
+              <img src="{% static 'website/img/core_img/s6.png' %}" alt="">
+            </div>
+            <h5>Отстраняване На Зъбни Болки</h5>
+            <p>Ако се появят силни болки, подуване или зачервяване около зъба... Необходимо е ВЕДНАГА се обърнете към експерт, за да предотврати по-сериозни затруднения!</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- ***** Services Area End ***** -->
+
+  <!-- ***** Testimonials Area Start ***** -->
+  <section class="testimonials-area section-padding-100 bg-img bg-gradient-overlay jarallax clearfix" style="background-image: url'{% static 'website/img/bg_img/7.jpg' %}';">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <!-- Testimonials Slides -->
+          <div class="testimonials-slides owl-carousel">
+            <!-- Single Testimonials Slide -->
+            <div class="single-testimonial-slide d-flex align-items-center">
+              <!-- Thumbnail -->
+              <div class="testimonial-thumb">
+                <img src="{% static 'website/img/bg_img/8.jpg' %}" alt="">
+              </div>
+              <!-- Content -->
+              <div class="testimonial-content">
+                <h5>“Избягвах да ходя на зъболекар поради години лош опит. Изпраща се SMS точно 1 работен ден преди Вашия час. Също получих и обаждане за потвърждаване на часа. Оттогава съм техен пациент! Зъболекарят ми е СУПЕР спокоен и страшно прецизен. 
+                  Отлично лечение и професионални съвети!”</h5>
+                <h6>Алекс Рамзи</h6>
+                <p>Пациент</p>
+              </div>
+            </div>
+
+            <!-- Single Testimonials Slide -->
+            <div class="single-testimonial-slide d-flex align-items-center">
+              <!-- Thumbnail -->
+              <div class="testimonial-thumb">
+                <img src="{% static 'website/img/bg_img/8.jpg' %}" alt="">
+              </div>
+              <!-- Content -->
+              <div class="testimonial-content">
+                <h5>“Избягвах да ходя на зъболекар поради години лош опит. Изпраща се SMS точно 1 работен ден преди Вашия час. Също получих и обаждане за потвърждаване на часа. Оттогава съм техен пациент! Зъболекарят ми е СУПЕР спокоен и страшно прецизен. 
+                  Отлично лечение и професионални съвети!”</h5>
+                <h6>Алекс Рамзи</h6>
+                <p>Пациент</p>
+              </div>
+            </div>
+
+            <!-- Single Testimonials Slide -->
+            <div class="single-testimonial-slide d-flex align-items-center">
+              <!-- Thumbnail -->
+              <div class="testimonial-thumb">
+                <img src="{% static 'website/img/bg_img/8.jpg' %}" alt="">
+              </div>
+              <!-- Content -->
+              <div class="testimonial-content">
+                <h5>“Избягвах да ходя на зъболекар поради години лош опит. Изпраща се SMS точно 1 работен ден преди Вашия час. Също получих и обаждане за потвърждаване на часа. Оттогава съм техен пациент! Зъболекарят ми е СУПЕР спокоен и страшно прецизен. 
+                  Отлично лечение и професионални съвети!”</h5>
+                <h6>Алекс Рамзи</h6>
+                <p>Пациент</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Testimonials Area End ***** -->
+
+  <!-- ***** Blog Area Start ***** -->
+  <section class="dento-blog-area section-padding-100-0 clearfix">
+    <div class="container">
+      <div class="row">
+        <!-- Section Heading -->
+        <div class="col-12">
+          <div class="section-heading text-center">
+            <h2>Последни Новини</h2>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Single Blog Item -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="single-blog-item mb-100">
+            <a href="{% url 'blog_details' %}">
+              <img src="{% static 'website/img/bg_img/4.jpg' %}" alt="">
+            </a>
+            <!-- Blog Content -->
+            <div class="blog-content">
+              <a href="{% url 'blog_details' %}" class="post-title">Как устните бактериите могат да увредят белите Ви дробове?</a>            
+              <div class="post-meta">
+                <a href="#"><i class="icon_clock_alt"></i> 28 Сеп. 2022</a>
+                <a href="#"><i class="icon_chat_alt"></i> 0 Коментара</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Blog Item -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="single-blog-item mb-100">
+            <a href="{% url 'blog_details' %}">
+              <img src="{% static 'website/img/bg_img/5.jpg' %}" alt="">
+            </a>
+            <!-- Blog Content -->
+            <div class="blog-content">
+              <a href="{% url 'blog_details' %}" class="post-title">Коя е най-добрата паста за зъби?</a>
+              <div class="post-meta">
+                <a href="#"><i class="icon_clock_alt"></i> 6 Ян. 2023</a>
+                <a href="#"><i class="icon_chat_alt"></i> 1 Коментар</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Blog Item -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="single-blog-item mb-100">
+            <a href="{% url 'blog_details' %}">
+              <img src="{% static 'website/img/bg_img/6.jpg' %}" alt="">
+            </a>
+            <!-- Blog Content -->
+            <div class="blog-content">
+              <a href="{% url 'blog_details' %}" class="post-title">Защо трябва да избягвате пиенето на напитки?</a>
+              <div class="post-meta">
+                <a href="#"><i class="icon_clock_alt"></i> 28 Ян. 2023</a>
+                <a href="#"><i class="icon_chat_alt"></i> 2 Коментара</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Blog Area End ***** -->
+
+{% endblock %}
